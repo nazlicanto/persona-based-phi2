@@ -1,5 +1,5 @@
 # Phi 2 Persona Based Chat Model
-This repository contains the Phi 2 Persona Based Chat Model, a LoRA fine-tuned version of the base Phi 2 model. The model is  trained on [nazlicanto/persona-based-chat dataset](https://huggingface.co/nazlicanto/phi-2-persona-chat) currently hosted on Hugging Face, which includes over 64,000 conversations designed to enhance personalized conversational text generation.
+This repository contains the Phi 2 Persona Based Chat Model, a LoRA fine-tuned version of the base Phi 2 model. The model is  trained on [nazlicanto/persona-based-chat dataset](https://huggingface.co/datasets/nazlicanto/persona-based-chat) currently hosted on Hugging Face, which includes over 64,000 conversations designed to enhance personalized conversational text generation.
 
 ## Dataset Overview
 The dataset is crafted for training conversational models that reflect detailed persona characteristics. Each dialogue in the dataset is structured to reflect a back-and-forth exchange between two personas, offering a window into how individual characteristics, backgrounds, and personal narratives can influence conversational flow and response generation. 
