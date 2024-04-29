@@ -1,8 +1,7 @@
-# persona-based-phi2# Phi 2 Persona Based Chat Model
-This repository contains the Phi 2 Persona Based Chat Model, a LoRA fine-tuned version of the base Phi 2 model. 
-It uses the [nazlicanto/persona-based-chat dataset](https://huggingface.co/nazlicanto/phi-2-persona-chat) currently hosted on Hugging Face, which includes over 64,000 conversations designed to enhance personalized conversational text generation.
+# Phi 2 Persona Based Chat Model
+This repository contains the Phi 2 Persona Based Chat Model, a LoRA fine-tuned version of the base Phi 2 model. The model is  trained on [nazlicanto/persona-based-chat dataset](https://huggingface.co/nazlicanto/phi-2-persona-chat) currently hosted on Hugging Face, which includes over 64,000 conversations designed to enhance personalized conversational text generation.
 
-### Dataset Overview
+## Dataset Overview
 The dataset is crafted for training conversational models that reflect detailed persona characteristics. Each dialogue in the dataset is structured to reflect a back-and-forth exchange between two personas, offering a window into how individual characteristics, backgrounds, and personal narratives can influence conversational flow and response generation. 
 
 ####  Training Data Fields
@@ -13,9 +12,13 @@ The dataset is crafted for training conversational models that reflect detailed 
 
 
 ## Model Description
-we apply the LoRA method for parameter-efficient fine-tuning (PEFT), which allows us to make task-specific adjustments to the Phi 2 model with minimal computational overhead. We also incorporate 4-bit quantization to optimize the model’s efficiency.  
+We apply the LoRA method for parameter-efficient fine-tuning (PEFT), allows us to make task-specific adjustments to the Phi 2 model with minimal computational overhead. We also incorporate 4-bit quantization to optimize the model’s efficiency.  
+
+We apply LoRA for parameter-efficient fine-tuning (PEFT) allows us to make task-specific adjustments to the Phi 2 model with minimal computational overhead. We also incorporate 4-bit quantization to optimize the model's efficiency (i.e., reduce model size for faster deployment).[Hugging Face Link](https://huggingface.co/nazlicanto/phi-2-persona-chat)
+
 
 ## Usage
+
 ### Clone, Setup, and Install:
 
 - Clone the repository and navigate to the project directory.  
@@ -24,9 +27,9 @@ we apply the LoRA method for parameter-efficient fine-tuning (PEFT), which allow
 
 ### Fine-tune the Model:
 
-Choose your dataset:  
+**Choose your dataset:**  
 Use the provided nazlicanto/persona-based-chat dataset (ideal for persona-grounded chat).
-Fine-tune on your own dataset with similar persona information.
+Fine-tune on your own dataset with similar persona information (i.e., persona descriptions and conversation examples).
 
 
 
